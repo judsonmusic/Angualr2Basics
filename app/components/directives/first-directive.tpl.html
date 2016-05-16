@@ -1,0 +1,13 @@
+<section>
+  <h2>This is the first directive {{name}}</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <form class="form form-horizontal">
+        <div class="form-group">
+          <label>Updating this input will only update the local model binding on the directive</label>
+          <input class="form-control" (input)="changeName($event)" placeholder="Enter some text!"/>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

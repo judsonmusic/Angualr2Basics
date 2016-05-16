@@ -1,7 +1,21 @@
 import {Component} from '@angular/core';
+import {GlobalService} from "./components/services/global.service";
+import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router-deprecated';
+import {Http, Jsonp, Response, HTTP_PROVIDERS} from '@angular/http';
+import {HomeComponent} from "./components/home.component";
 
 @Component({
-    selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+  selector: 'my-app',
+  templateUrl: './app/app.tpl.html',
+  directives: [ROUTER_DIRECTIVES]
 })
-export class AppComponent { }
+
+@RouteConfig([
+  {path:'/home', name: 'Home', component: HomeComponent, useAsDefault: true}
+])
+
+export class AppComponent {
+
+
+
+}
