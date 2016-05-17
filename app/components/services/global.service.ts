@@ -1,6 +1,6 @@
 import {Injectable, EventEmitter} from "@angular/core";
 import {Http, Jsonp, Response, HTTP_PROVIDERS} from '@angular/http';
-import {Observable}  from 'node_modules/rxjs/Observable.d';
+//import {Observable}  from '../../node_modules/rxjs/Observable.d';
 
 
 @Injectable()
@@ -15,6 +15,7 @@ export class GlobalService {
   constructor(private http: Http) {
       this.name =  "Please enter a name!";
   }
+/*
 
   //store new data in data model.
   getData(url?: string) : any {
@@ -25,6 +26,7 @@ export class GlobalService {
         error => { console.log(error) },
         () => this.stateChange.emit(this.data));
   }
+*/
 
 
 

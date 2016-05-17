@@ -5,7 +5,9 @@
       <form class="form form-horizontal">
         <div class="form-group">
           <label>Updating this input will only update the local model binding on the directive</label>
-          <input class="form-control" (input)="changeName($event)" placeholder="Enter some text!"/>
+          <input class="form-control" (input)="changeName($event)" [(ngModel)]="someVar" placeholder="Enter some text!"/>
+
+        {{someVar}}
         </div>
       </form>
     </div>
